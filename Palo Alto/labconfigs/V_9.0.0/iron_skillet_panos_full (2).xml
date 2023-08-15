@@ -2170,23 +2170,6 @@ Log off immediately if you are not an authorized user.</login-banner>
     <member>Inbound-WF</member>
   </wildfire-analysis>
 </entry>
-<entry name="Internal">
-  <virus>
-    <member>Internal-AV</member>
-  </virus>
-  <spyware>
-    <member>Internal-AS</member>
-  </spyware>
-  <vulnerability>
-    <member>Internal-VP</member>
-  </vulnerability>
-  <file-blocking>
-    <member>Internal-FB</member>
-  </file-blocking>
-  <wildfire-analysis>
-    <member>Internal-WF</member>
-  </wildfire-analysis>
-</entry>
 <entry name="Alert-Only">
   <virus>
     <member>Alert-Only-AV</member>
