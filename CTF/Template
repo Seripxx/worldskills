@@ -1,0 +1,30 @@
+OS:
+Web-Technology:
+
+IP: 
+
+USERS:
+
+CREDENTIALS(ANY):
+
+===================================================
+Ports (To-Try List):
+
+===================================================
+NMAP RESULTS:
+
+===================================================
+Web Services Enumeration:
+
+[ + NIKTO	]
+[ + WFUZZ ]
+
+FILES :  /  (Web Root)
+
+DIRECTORIES: / (Web Root)
+
+====================================================
+OTHER:
+
+====================================================
+Take Away Concepts:  
