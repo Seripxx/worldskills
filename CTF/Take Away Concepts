@@ -25,3 +25,7 @@ The ftp port is filtered so we check (../../../../etc/knockd.conf)
 [FTP]
 sequence = 1234:tcp,5678:tcp,9012:tcp
 unblock the port by knocking the ip with this sequence. the command is "knock 192.168.153.137 1234 5678 9012 -v
+
+
+nc(netcat) to connect to ports 
+nc 192.168.153.128 1337
